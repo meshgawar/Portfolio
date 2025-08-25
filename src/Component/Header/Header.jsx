@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Smith</a>
+                <a href="index.html" className="nav__logo">Mesh</a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
@@ -37,12 +37,12 @@ export default function Header() {
 
                         <li className="nav__itme">
                             <a href="#project" className="nav__link">
-                                <i className="uil uil-lightbulb-alt nav__icon"></i> Project
+                                <i className="uil uil-lightbulb-alt nav__icon"></i> Portfolio
                             </a>
                         </li>
 
                         <li className="nav__itme">
-                            <a href="#contack" className="nav__link">
+                            <a href="#contact" className="nav__link">
                                 <i className="uil uil-message nav__icon"></i> Contact 
                             </a>
                         </li>

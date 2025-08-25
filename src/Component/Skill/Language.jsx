@@ -1,7 +1,7 @@
 export default function Language() {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Languages And Version Control</h3>
+            <h3 className="skills__title">Languages And VCS</h3>
                 {/* First Group */}
                 <div className="skills__group">
                     {/* First Data */}
