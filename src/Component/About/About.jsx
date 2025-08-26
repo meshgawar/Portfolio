@@ -14,7 +14,7 @@ export default function About() {
                 <div className="about__data">
                     <Info />
 
-                    <p className="about__description">Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+                    <p className="about__description">Full Stack Web Developer dedicated to delivering fast, modern, and user-focused applications. Experienced in building clean front-end designs and scalable back-end architectures.</p>
 
                     <a download="" href={Resume} className="button button--flex">Download Resume
                         <svg className="button__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">

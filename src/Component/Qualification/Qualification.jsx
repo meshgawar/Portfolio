@@ -4,9 +4,9 @@ import "./Qualification.css"
 export default function Qualification() {
     const [getToggleState, setToggleState] = useState(1);
 
-    const toggleLine = (index) => {
-        setToggleState(index);
-    };
+    // const toggleLine = (index) => {
+    //     setToggleState(index);
+    // };
 
     return (
         <section className="qualification section" id="qualification">
@@ -15,17 +15,16 @@ export default function Qualification() {
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    <div className={getToggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} 
-                        onClick={() => {toggleLine(1)}}>
+                    <div className={getToggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} >
                         <i className="uil uil-graduation-cap qualification__icon"></i>{" "}
                         Education
                     </div>
 
-                    <div className={getToggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
+                    {/* <div className={getToggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
                         onClick={() => {toggleLine(2)}}>
                         <i className="uil uil-briefcase-alt qualification__icon"></i>{" "}
                         Experience
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="qualification__sections">
@@ -86,8 +85,8 @@ export default function Qualification() {
                     </div>
 
                     {/* For Experience */}
-                    <div className={getToggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                        {/* First Data */}
+                    {/*<div className={getToggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
+
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">B.tech</h3>
@@ -103,7 +102,7 @@ export default function Qualification() {
                             </div>
                         </div>
                         
-                    </div>
+                    </div>*/}
                 </div>
 
             </div>
