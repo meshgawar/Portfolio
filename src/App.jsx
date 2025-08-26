@@ -5,7 +5,8 @@ import About from './Component/About/About.jsx'
 import Skill from './Component/Skill/Skill.jsx'
 import Qualification from './Component/Qualification/Qualification.jsx';
 import Portfolio from './Component/Project/Portfolio.jsx'
-import Contact from './Component/Contact/Contact.jsx'
+import Contact from './Component/Contact/Contact.jsx';
+import Footer from './Component/Footer/Footer.jsx'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Qualification/>
         <Portfolio/>
         <Contact/>
+        {/* <Footer/> */}
       </main>
     </>
   )

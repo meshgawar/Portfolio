@@ -1,41 +1,62 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./Contact.css";
 
-export default function Contact(params) {
+export default function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_bkax93o', 'template_0toq4hl', form.current, {
+                publicKey: 'gwitMJDe4hQHCZ9CB',
+            })
+        e.target.reset();
+    };
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+            <span className="section__subtitle">Contact me</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
-
+                    <span className="contact__card-data">
+                        <h3 className="contact__title">Contact Info</h3>
+                    </span>
 
                     <div className="contact__info">
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
-                            <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">meshgawar@gmail.com</span>
-
-                            <a href="mailto:meshgawar@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            {/* <h3 className="contact__card-title">Email</h3> */}
+                            <a href="mailto:meshgawar@gmail.com" className="contact__button">meshgawar@gmail.com</a>
+                            {/* <span className="contact__card-data"></span> */}
+                            {/* Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i> */}
                         </div>
 
                         <div className="contact__card">
                             <i className="bx bxl-linkedin contact__card-icon"></i>
 
-                            <h3 className="contact__card-title">LinkedIn</h3>
-                            <span className="contact__card-data">meshgawar</span>
+                            {/* <h3 className="contact__card-title">LinkedIn</h3> */}
+                            <a href="https://www.linkedin.com/in/meshgawar24/" className="contact__button">meshgawar24</a>
+                            {/* <span className="contact__card-data"></span> */}
+                            {/* Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i> */}
+                        </div>
 
-                            <a href="https://www.linkedin.com/in/meshgawar/" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <div className="contact__card">
+                            <button title='YouTube'><a href="https://www.youtube.com/"><i class="bx bxl-youtube contact__card-button-icon"></i></a></button>
+                            <button title='GitHub'><a href="https://github.com/meshgawar/"><i class="bx bxl-github contact__card-button-icon"></i></a></button>
+                            <button title='LeetCode'><a href="https://leetcode.com/u/meshgawar24/"><i class="bx bx-code-alt contact__card-button-icon"></i></a></button>
+                            <button title='Hackerrank'><a href="https://www.hackerrank.com/profile/meshgawar"><i class="bx bx-terminal contact__card-button-icon"></i></a></button>
                         </div>
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me your project</h3>
+                    <span className="contact__card-data"><h3 className="contact__title">Send a Message</h3><i class='bx  bx-envelope contact__card-icon'  ></i></span>
 
-                    <form className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name"
