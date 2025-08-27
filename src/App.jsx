@@ -21,7 +21,8 @@ function App() {
         <Qualification/>
         <Portfolio/>
         <Contact/>
-        {/* <Footer/> */}
+        <Footer/>
+        
       </main>
     </>
   )

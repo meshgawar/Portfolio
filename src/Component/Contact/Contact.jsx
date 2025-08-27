@@ -48,7 +48,7 @@ export default function Contact() {
                             <button title='YouTube'><a href="https://www.youtube.com/"><i className="bx bxl-youtube contact__card-button-icon"></i></a></button>
                             <button title='GitHub'><a href="https://github.com/meshgawar/"><i className="bx bxl-github contact__card-button-icon"></i></a></button>
                             <button title='LeetCode'><a href="https://leetcode.com/u/meshgawar24/"><i className="bxl  bx-leetcode contact__card-button-icon"></i></a></button>
-                            <button title='Hackerrank'><a href="https://www.hackerrank.com/profile/meshgawar"><i className="bx bx-terminal contact__card-button-icon"></i></a></button>
+                            <button title='Hackerrank'><a href="https://www.hackerrank.com/profile/meshgawar"><i className="fa-brands fa-hackerrank contact__card-button-icon"></i></a></button>
                         </div>
                     </div>
                 </div>

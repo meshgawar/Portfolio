@@ -31,6 +31,8 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.25rem;
   border-radius: 1rem;
+  max-width: 336px;
+  overflow: hidden;
 }
 
 .work__img {
@@ -46,24 +48,34 @@
 }
 
 .work__button {
-  color: var(--text-color);
-}
-
-.work__button {
-  color: var(--text-color);
+  cursor: pointer;
+  color: var(--title-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 0 5px 0 5px;
+}
+
+.work__button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .work__button-icon {
-  font-size: 1rem;
-  transition: 0.4s;
+  font-size: 1.3rem;
 }
 
-.work__button:hover .work__button-icon {
-  transform: translateX(0.25rem);
+.work__button:hover {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.work__button-icon:hover {
+  color: var(--container-color);
 }
 
 /* Active Work */
@@ -101,7 +113,8 @@
 
 @media screen and (max-width: 576px) {
   .work__container {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    justify-content: center;
   }
 
   .work__img {
@@ -112,6 +125,7 @@
 /* For small devices */
 @media screen and (max-width: 350px) {
   .work__container {
+    grid-template-columns: 1fr;
     font-size: var(--small-font-size);
   }
 
