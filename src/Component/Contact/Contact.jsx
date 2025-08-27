@@ -45,16 +45,16 @@ export default function Contact() {
                         </div>
 
                         <div className="contact__card">
-                            <button title='YouTube'><a href="https://www.youtube.com/"><i class="bx bxl-youtube contact__card-button-icon"></i></a></button>
-                            <button title='GitHub'><a href="https://github.com/meshgawar/"><i class="bx bxl-github contact__card-button-icon"></i></a></button>
-                            <button title='LeetCode'><a href="https://leetcode.com/u/meshgawar24/"><i class="bx bx-code-alt contact__card-button-icon"></i></a></button>
-                            <button title='Hackerrank'><a href="https://www.hackerrank.com/profile/meshgawar"><i class="bx bx-terminal contact__card-button-icon"></i></a></button>
+                            <button title='YouTube'><a href="https://www.youtube.com/"><i className="bx bxl-youtube contact__card-button-icon"></i></a></button>
+                            <button title='GitHub'><a href="https://github.com/meshgawar/"><i className="bx bxl-github contact__card-button-icon"></i></a></button>
+                            <button title='LeetCode'><a href="https://leetcode.com/u/meshgawar24/"><i className="bxl  bx-leetcode contact__card-button-icon"></i></a></button>
+                            <button title='Hackerrank'><a href="https://www.hackerrank.com/profile/meshgawar"><i className="bx bx-terminal contact__card-button-icon"></i></a></button>
                         </div>
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <span className="contact__card-data"><h3 className="contact__title">Send a Message</h3><i class='bx  bx-envelope contact__card-icon'  ></i></span>
+                    <span className="contact__card-data"><h3 className="contact__title">Send a Message</h3><i className='bx bx-envelope contact__card-icon'  ></i></span>
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">

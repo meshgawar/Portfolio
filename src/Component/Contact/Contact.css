@@ -56,9 +56,9 @@
 } */
 
 .contact__card-data {
-  display: inline-flex;
-  gap: 10rem;
-  /* margin-bottom: var(--mb-0-75); */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .contact__button {
@@ -135,9 +135,6 @@
     align-items: center;
   }
 
-  .contact__card-data {
-    gap: 12rem;
-  }
 }
 
 /* For medium devices */
@@ -165,6 +162,3 @@
   }
 }
 
-/* For small devices */
-@media screen and (max-width: 350px) {
-}
