@@ -5,8 +5,39 @@
 
 .footer__container {
   padding: 2rem 0 6rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
+.footer__container-child {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 5rem;
+}
+
+.footer__copy {
+  text-align: center;
+}
+
+.footer__social {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.list__title {
+  margin-bottom: 1rem;
+}
+
+.list__title:hover {
+  color: var(--title-color-dark);
+}
+
+.footer__list ul {
+  display: grid;
+  gap: 0.5rem;
+}
 .footer__title .footer__link {
   color: var(--title-color);
 }
@@ -23,8 +54,9 @@
 .footer__social-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
+  padding-left: 1rem;
   color: var(--title-color);
   border: 1px solid red;
   border-radius: 1rem;
@@ -33,5 +65,5 @@
 }
 
 .footer__social-link:hover {
-    color: var(--title-color-dark);
+  color: var(--title-color-dark);
 }
