@@ -7,7 +7,7 @@ export default function Footer() {
                 {/* <h1 className="footer title">Mesh</h1> */}
                 <div className="footer__container-child">
                     <div className="footer__list">
-                        <h4 className="list__title">Main</h4>
+                        <h3 className="list__title">Main</h3>
                         <ul>
                             <li>
                                 <a href="index.html" className="footer__link">Home</a>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
 
                     <div className="footer__list">
-                        <h4 className="list__title">About</h4>
+                        <h3 className="list__title">About</h3>
                         <ul>
                             <li>
                                 <a href="#about" className="footer__link">About Me</a>
@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
 
                     <div className="footer__list">
-                        <h4 className="list__title">Contact</h4>
+                        <h3 className="list__title">Contact</h3>
                         <ul>
                             <li>
                                 <a href="#contact" className="footer__link">Contact Me</a>
