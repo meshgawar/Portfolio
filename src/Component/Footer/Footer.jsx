@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <section className="footer">
             <div className="footer__container container">
-                {/* <h1 className="footer title">Mesh</h1> */}
+                {/* 
                 <div className="footer__container-child">
                     <div className="footer__list">
                         <h3 className="list__title">Main</h3>
@@ -72,7 +72,7 @@ export default function Footer() {
                             Leetcode
                         </a>
                     </div>
-                </div>
+                </div> */}
                 <span className="footer__copy">&#169; Mesh Gawar. All rights reserved</span>
             </div>
         </section>

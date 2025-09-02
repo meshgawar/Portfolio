@@ -5,7 +5,7 @@ export const projectsData = [
     id: 1,
     image: Work1,
     title: "Weather App",
-    link: "https://sky-now-weather-app.vercel.app/",
+    link: "https://sky-now-weather.vercel.app/",
     description: "React-based weather app with real-time weather, AQI data, live location tracking, and voice search.",
     category: "Frontend",
   },
