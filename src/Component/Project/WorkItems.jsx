@@ -2,7 +2,7 @@ export default function WorkItems({ item }) {
     return (
         
         <div className="work__card" key={item.id}>
-            <img src={item.image} alt="" className="work__img" />
+            <img src={item.image} alt="" className="work__img" onClick={() => {window.open(`${item.image}`)}} />
             <h3 className="work__title">{item.title}</h3>
             <p>{item.description}</p>
             <div className="work__button-container">

@@ -36,6 +36,7 @@
 }
 
 .work__img {
+  cursor: pointer;
   width: 295px;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
