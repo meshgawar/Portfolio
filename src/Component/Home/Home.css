@@ -35,7 +35,6 @@ button {
 .home__hand {
   width: 38px;
   height: 38px;
-  margin-left: 0.4rem;
 }
 
 .home__subtitle {
@@ -62,7 +61,7 @@ button {
 }
 
 .home__img {
-  background: url(../../assets/profile.jpg);
+  background: url(../../assets/profileImage.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
